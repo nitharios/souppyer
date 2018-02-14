@@ -6,6 +6,8 @@ This app was built to develop my skills as a Python developer. At its core, this
 
 ## Installation
 
+_Built with Python3_
+
 1. Fork and clone
 1. ```cd souppyer```
 1. Follow my ```virtualenv``` steps [here](https://github.com/nitharios/simple-flask-app)
