@@ -13,7 +13,11 @@ _Built with Python3_
 1. Follow the ```virtualenv``` steps [here](https://github.com/nitharios/simple-flask-app)
 1. ```pip install -r requirements.txt```
 1. python app.py
-1. Checkout what you scraped ```cd data/data.txt```
+1. Checkout what you scraped ```data/data.txt```
+
+## Issues
+
+[403 Forbidden](https://stackoverflow.com/questions/16627227/http-error-403-in-python-3-web-scraping#16627277)
 
 ## Tools
 
