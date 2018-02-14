@@ -10,10 +10,10 @@ _Built with Python3_
 
 1. Fork and clone
 1. ```cd souppyer```
-1. Follow my ```virtualenv``` steps [here](https://github.com/nitharios/simple-flask-app)
+1. Follow the ```virtualenv``` steps [here](https://github.com/nitharios/simple-flask-app)
 1. ```pip install -r requirements.txt```
 1. python app.py
-1. Checkout what you scraped at  ```cd data/data.txt```
+1. Checkout what you scraped ```cd data/data.txt```
 
 ## Tools
 
