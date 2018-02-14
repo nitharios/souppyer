@@ -27,9 +27,11 @@ _Built with Python3_
 
 ## Resources
 
-[20+ Web Scraping Examples](https://likegeeks.com/python-web-scraping/)
+[Automate the Boring Stuff](https://automatetheboringstuff.com/chapter0/)
 
 [Introduction to Web Scraping (with Python and Beautiful Soup)](https://www.youtube.com/watch?v=XQgXKtPSzUI&t=122s)
+
+[20+ Web Scraping Examples](https://likegeeks.com/python-web-scraping/)
 
 [How to Work with virtualenv](https://github.com/nitharios/simple-flask-app)
 
