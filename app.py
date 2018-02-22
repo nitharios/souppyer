@@ -16,6 +16,7 @@ except HTTPError as e:
   print(e)
 
 else:
+  # append & interpret binary
   f = open(path, 'ab')
   data = response.read()
   f.write(data)

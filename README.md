@@ -31,9 +31,9 @@ _Built with Python3_
 
 [Automate the Boring Stuff](https://automatetheboringstuff.com/chapter0/)
 
-[Introduction to Web Scraping (with Python and Beautiful Soup)](https://www.youtube.com/watch?v=XQgXKtPSzUI&t=122s)
-
 [How to Work with virtualenv](https://github.com/nitharios/simple-flask-app)
+
+[Introduction to Web Scraping (with Python and Beautiful Soup)](https://www.youtube.com/watch?v=XQgXKtPSzUI&t=122s)
 
 ## License
 
