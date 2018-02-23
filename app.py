@@ -7,6 +7,7 @@ from assets.config import url, path
 
 try:
   class AppURLopener(FancyURLopener):
+    # required to mimic a browser
     version = "Mozilla/5.0"
   opener = AppURLopener()
   response = opener.open(url)
