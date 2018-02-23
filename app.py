@@ -2,8 +2,7 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import FancyURLopener, urlopen
 from urllib.error import HTTPError
 
-# comment out or program will break
-from lib import script
+from lib import script   # comment out or program will break
 from assets.config import url, path
 
 try:
@@ -16,11 +15,9 @@ except HTTPError as e:
   print(e)
 
 else:
-  # append & interpret binary
-  f = open(path, 'ab')
+  f = open(path, 'ab')    # append & interpret binary
   data = response.read()
   f.write(data)
   f.close
 
-# comment out or program will break
-print(script.run())
+print(script.run())  # comment out or program will break
