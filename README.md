@@ -19,6 +19,8 @@ _Built with Python3_
 
 [403 Forbidden](https://stackoverflow.com/questions/16627227/http-error-403-in-python-3-web-scraping#16627277)
 
+[SSL: CERTIFICATE_VERIFY_FAILED](https://stackoverflow.com/questions/41691327/ssl-sslerror-ssl-certificate-verify-failed-certificate-verify-failed-ssl-c)
+
 ## Tools
 
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
