@@ -1,24 +1,31 @@
+import csv
+import requests as req
 from bs4 import BeautifulSoup as soup
-from urllib.request import FancyURLopener, urlopen
-from urllib.error import HTTPError
 
 from lib import script   # comment out or program will break
 from assets.config import url, path
 
-try:
-  class AppURLopener(FancyURLopener):
-    # required to mimic a browser
-    version = "Mozilla/5.0"
-  opener = AppURLopener()
-  response = opener.open(url)
+# scrape data
+data = req.get('https://medium.com/topic/technology')
 
-except HTTPError as e:
-  print(e)
+# parse data
+data = soup(data.text, 'html.parser')
 
-else:
-  f = open(path, 'ab')    # append & interpret binary
-  data = response.read()
-  f.write(data)
-  f.close
+# find all that matches a case and store as list
+data = data.find_all('a', class_="")
 
-print(script.run())  # comment out or program will break
+# loop through list
+for key in data:
+  # grab link by key 'href'
+  link = key['href']
+  # find string index of '?'
+  slice_index = link.find('?')
+  # slice the link at the index of '?'
+  link = link[:slice_index]
+
+  # open file and write to it
+  with open(path, 'a') as file:
+    writer = csv.writer(file)
+    writer.writerow([link])
+
+# print(script.run())  # comment out or program will break
