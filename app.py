@@ -14,6 +14,9 @@ data = soup(data.text, 'html.parser')
 # find all that matches a case and store as list
 data = data.find_all('a', class_="")
 
+# slice array[start_index:end_index:step]
+data = data[::2]
+
 # loop through list
 for key in data:
   # grab link by key 'href'
