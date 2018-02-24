@@ -7,13 +7,10 @@ from assets.config import url, path
 
 # scrape data
 data = req.get('https://medium.com/topic/technology')
-
 # parse data
 data = soup(data.text, 'html.parser')
-
 # find all that matches a case and store as list
 data = data.find_all('a', class_="")
-
 # slice notation -> list[start_index:end_index:step]
 data = data[::2]
 
