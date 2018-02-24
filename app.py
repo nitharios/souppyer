@@ -3,7 +3,7 @@ import requests as req
 
 from bs4 import BeautifulSoup as soup
 from assets.config import url, path
-from lib import script   # comment out or program will break
+# from lib import script   # comment out or program will break
 
 def program():
   # scrape data
