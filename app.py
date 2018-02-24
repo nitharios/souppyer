@@ -2,7 +2,7 @@ import csv
 import requests as req
 from bs4 import BeautifulSoup as soup
 
-from lib import script   # comment out or program will break
+# from lib import script   # comment out or program will break
 from assets.config import url, path
 
 # scrape data
@@ -14,7 +14,7 @@ data = soup(data.text, 'html.parser')
 # find all that matches a case and store as list
 data = data.find_all('a', class_="")
 
-# slice array[start_index:end_index:step]
+# slice notation -> list[start_index:end_index:step]
 data = data[::2]
 
 # loop through list
