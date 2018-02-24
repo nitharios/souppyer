@@ -3,7 +3,7 @@ import requests as req
 
 from bs4 import BeautifulSoup as soup
 from assets.config import url, path
-# from lib import script   # comment out or program will break
+from lib import script   # comment out or program will break
 
 def program():
   # scrape data
@@ -11,7 +11,7 @@ def program():
   # parse data
   data = soup(data.text, 'html.parser')
   # find all that matches a case and store as list
-  data = data.find_all('a', class_="")
+  data = data.find_all('a', class_='')
   # slice notation -> list[start_index:end_index:step]
   data = data[::2]
 
