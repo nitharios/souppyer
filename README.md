@@ -15,7 +15,7 @@ _Built with Python3_
 1. ```mkdir data```
 1. Open ```app.py``` and comment out the lines where instructed to
 1. ```python app.py```
-1. Checkout what you scraped ```data/data.txt```
+1. Check out what you scraped ```data/data.txt```
 
 ## Issues
 
