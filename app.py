@@ -13,6 +13,7 @@ def program():
   # find all that matches a case and store as list
   data = data.find_all('a', class_='')
   # slice notation -> list[start_index:end_index:step]
+  # necessary because of repeating links in scraped code
   data = data[::2]
 
   # loop through list
