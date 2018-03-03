@@ -9,7 +9,7 @@ def program():
   # scrape data
   data = req.get('https://medium.com/topic/technology')
   # parse data
-  data = soup(data.text, 'html.parser')
+  data = soup(data.text, 'html.parser')  # have to use a parser or data will be unreadable
   # find all that matches a case and store as list
   data = data.find_all('a', class_='')
   # slice notation -> list[start_index:end_index:step]
