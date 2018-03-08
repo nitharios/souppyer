@@ -30,6 +30,6 @@ def program():
       writer = csv.writer(file)
       writer.writerow([link])
 
-  # print(script.engage())  # comment out or program will break
+  print(script.engage())  # comment out or program will break
 
 script.start(program)
