@@ -2,7 +2,7 @@ import csv
 import requests as req
 
 from bs4 import BeautifulSoup as soup
-from assets.config import url, path
+from assets.config import url, path_to_file
 from lib import script   # comment out or program will break
 
 def program():
@@ -15,7 +15,6 @@ def program():
   # slice notation -> list[start_index:end_index:step]
   # necessary because of repeating links in scraped code
   data = data[::2]
-
   # loop through list
   for key in data:
     # grab link by key 'href'
@@ -26,7 +25,7 @@ def program():
     link = link[:slice_index]
 
     # open file and write to it
-    with open(path, 'a') as file:
+    with open(path_to_file, 'a') as file:
       writer = csv.writer(file)
       writer.writerow([link])
 
